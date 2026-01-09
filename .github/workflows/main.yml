@@ -25,8 +25,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Linter
-        run: npm init @eslint/config@latest
-
       - name: Run lint
         run: npm run lint
