@@ -99,7 +99,7 @@ jobs:
           severity: 'CRITICAL,HIGH'
 
   push_docker_image:
-    needs: scan_docker_image
+    needs: create_docker_image_and_scan_image
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
