@@ -89,6 +89,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: false
+          load: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ttt_app:${{ github.run_id }}
    
   scan_docker_image:
